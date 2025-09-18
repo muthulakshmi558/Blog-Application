@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Virtualenv
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Django stuff
+*.pot
+*.pyc
+db.sqlite3
+
+# Static files (generated)
+staticfiles/
+
+# Environment
+.env
+*.env
+
+# Node modules (if frontend inside project)
+node_modules/
