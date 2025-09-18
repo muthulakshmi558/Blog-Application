@@ -8,7 +8,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG') == 'False'
+DEBUG = os.getenv('DEBUG') == 'True'
 ALLOWED_HOSTS = ['blog-application-nc6y.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
