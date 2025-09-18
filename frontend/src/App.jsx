@@ -10,7 +10,7 @@ import Register from './pages/Register'
 import CreatePost from './pages/CreatePost'
 import PostDetail from './pages/PostDetail'
 import Profile from './pages/Profile'
-
+import Footer from './components/Footer'
 function App() {
   const [user, setUser] = useState(null)
   const navigate = useNavigate()
@@ -51,6 +51,8 @@ function App() {
         <Route path="/post/:id" element={<PostDetail user={user} />} />
         <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
       </Routes>
+      <Footer />
+
     </div>
   )
 }
