@@ -1,14 +1,13 @@
 # backend/blog_application/settings.py
 import os
 from pathlib import Path
-from dotenv import load_dotenv
-
-load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG') == 'True'
+SECRET_KEY = '2(rit0_iy)(--l(5s3@e&ymc_9!k)v*ir(@n8f0ti+6*vkin4'  
+
+DEBUG = True  
+
 ALLOWED_HOSTS = ['blog-application-nc6y.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
@@ -17,7 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',  # Add WhiteNoise for serving static/media in development
+    'whitenoise.runserver_nostatic',  
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
@@ -27,9 +26,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
-    "whitenoise.middleware.WhiteNoiseMiddleware", 
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -39,7 +37,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://blog-application-henna-delta.vercel.app',
+    'http://localhost:5173',
 ]
 
 REST_FRAMEWORK = {
@@ -70,11 +68,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = 'muthulakshmi5293@gmail.com'  
+EMAIL_HOST_PASSWORD = 'mrcz xqlq vlxg ilji'  
 
 # Static and media files with WhiteNoise
-# backend/blog_application/settings.py (relevant section)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
