@@ -23,7 +23,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('blog.urls')),
-    path('auth/token/', ObtainAuthToken.as_view(), name='login'),
+    path('auth/login/', ObtainAuthToken.as_view(), name='login'),
 
 ]
 if settings.DEBUG:
