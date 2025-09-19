@@ -37,7 +37,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    'https://blog-application-p5no.vercel.app',
 ]
 
 REST_FRAMEWORK = {
