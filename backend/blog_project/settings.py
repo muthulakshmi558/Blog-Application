@@ -8,7 +8,7 @@ SECRET_KEY = '2(rit0_iy)(--l(5s3@e&ymc_9!k)v*ir(@n8f0ti+6*vkin4'
 
 DEBUG = False  
 APPEND_SLASH = False
-ALLOWED_HOSTS = ['blog-application-nc6y.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['blog-application-2-mx0g.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
